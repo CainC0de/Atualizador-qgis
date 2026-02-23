@@ -4,7 +4,6 @@ from qgis.PyQt.QtWidgets import QAction
 from .resources import *
 import os.path
 
-# --- IMPORTAÇÃO CORRETA DA NOSSA LÓGICA ---
 from .interface_logica import AtualizadorAreaTotal
 
 class Atualizar_tabelas_qgis:
@@ -25,7 +24,7 @@ class Atualizar_tabelas_qgis:
             QCoreApplication.installTranslator(self.translator)
 
         self.actions = []
-        self.menu = self.tr(u'&Atualizar Tabelas') # Nome no Menu
+        self.menu = self.tr(u'&Atualizar Tabelas')
 
         self.first_start = True
 
