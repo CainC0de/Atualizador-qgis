@@ -67,7 +67,6 @@ class Atualizar_tabelas_qgis:
 
     def initGui(self):
         """Create the menu entries and toolbar icons inside the QGIS GUI."""
-        # Define o ícone
         icon_path = ':/plugins/atualizer_plugin/icon.png'
         
         self.add_action(
@@ -86,6 +85,5 @@ class Atualizar_tabelas_qgis:
 
     def run(self):
         """Run method that performs all the real work"""
-        # AQUI ESTÁ A MÁGICA: Chama o arquivo interface_logica.py
         dlg = AtualizadorAreaTotal()
         dlg.exec_()
